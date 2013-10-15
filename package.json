@@ -1,0 +1,23 @@
+{
+  "name": "entangle-mongo",
+  "version": "0.0.1",
+  "repository": "entanglejs/entangle-mongo",
+  "description": "Mongo driver for 'entangled' objects",
+  "keywords": [
+    "entangled",
+    "entangle",
+    "mongo",
+    "mongodb",
+    "driver"
+  ],
+  "dependencies": {
+    "entangle-redis": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "entangle": "0.0.1",
+    "mongoskin": "~0.6.0"
+  },
+  "license": "MIT"
+}

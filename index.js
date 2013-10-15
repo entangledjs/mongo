@@ -29,28 +29,6 @@ function Driver(col) {
 }
 
 /**
- * Handle subscription and flush queued events.
- *
- * @api private
- */
-
-Driver.prototype.onsubscribe = function(){
-  this.subscribed = true;
-  this.flush();
-};
-
-/**
- * Flush queued events.
- *
- * @api private
- */
-
-Driver.prototype.flush = function(){
-  this.buffer.forEach(this.pub.bind(this));
-  this.buffer = [];
-};
-
-/**
  * Load object by `id` and invoke `fn(null, obj)`.
  *
  * @param {String} id
